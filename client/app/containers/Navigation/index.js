@@ -145,7 +145,7 @@ class Navigation extends React.PureComponent {
                 <span>Envios A Todo El Pais</span>
               </Col>
               <Col md='4' className='text-center d-none d-md-block'>
-                <span><img src='/images/banners/logo.jpg' className='mb-3' /></span>
+                <span><img src='/images/banners/logo2.jpg' className='mb-3' /></span>
               </Col>
               <Col md='4' className='text-center d-none d-md-block'>
                 <i className='fa fa-phone' />
@@ -174,7 +174,7 @@ class Navigation extends React.PureComponent {
                   />
                 )}
                 <Link to='/'>
-                  <h1 className='logo'><img src='/images/banners/logo.jpg' /></h1>
+                  <h1 className='logo'>LYNXSPORTS</h1>
                 </Link>
               </div>
             </Col>

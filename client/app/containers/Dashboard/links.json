@@ -7,11 +7,11 @@
     { "to": "/category", "name": "Categorías" },
     { "to": "/brand", "name": "Marcas" },
     { "to": "/users", "name": "Usuarios" },
-    { "to": "/merchants", "name": "Merchants" },
-    { "to": "/orders", "name": "Orders" },
-    { "to": "/review", "name": "Reviews" },
-    { "to": "/wishlist", "name": "WishList" },
-    { "to": "/support", "name": "Support" }
+    { "to": "/merchants", "name": "Comerciantes" },
+    { "to": "/orders", "name": "Ordenes" },
+    { "to": "/review", "name": "Reseñas" },
+    { "to": "/wishlist", "name": "lista de deseos" },
+    { "to": "/support", "name": "Soporte" }
   ],
   "ROLE_MERCHANT": [
     { "to": "", "name": "Detalles De La Cuenta" },
@@ -19,16 +19,16 @@
     { "to": "/address", "name": "Dirección" },
     { "to": "/brand", "name": "Marcas" },
     { "to": "/product", "name": "Productos" },
-    { "to": "/orders", "name": "Orders" },
-    { "to": "/wishlist", "name": "WishList" },
-    { "to": "/support", "name": "Support" }
+    { "to": "/orders", "name": "Pedidos" },
+    { "to": "/wishlist", "name": "lista de deseos" },
+    { "to": "/support", "name": "Soporte" }
   ],
   "ROLE_MEMBER": [
     { "to": "", "name": "Detalles De La Cuenta" },
     { "to": "/security", "name": "Seguridad de la cuenta" },
     { "to": "/address", "name": "Productos" },
     { "to": "/orders", "name": "Pedidos" },
-    { "to": "/wishlist", "name": "WishList" },
-    { "to": "/support", "name": "Support" }
+    { "to": "/wishlist", "name": "lista de deseos" },
+    { "to": "/support", "name": "Soporte" }
   ]
 }

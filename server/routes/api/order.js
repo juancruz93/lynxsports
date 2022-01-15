@@ -160,7 +160,7 @@ router.get('/', auth, async (req, res) => {
     
     if (ordersDoc.length > 0) {
       
-      const orders = ordersDoc.map(o => {
+      const orderss = ordersDoc.map(o => {
         return {
           _id: o._id,
           total: parseFloat(Number(o.total.toFixed(2))),
@@ -169,8 +169,8 @@ router.get('/', auth, async (req, res) => {
         };
       });
 
-      //let orders = newOrders.map(o => store.caculateTaxAmount(o));
-     // orders.sort((a, b) => b.created - a.created);
+      let orders = orderss.map(o => store.caculateTaxAmount(o));
+      orders.sort((a, b) => b.created - a.created);
 
      //console.log(newOrders);
       res.status(200).json({

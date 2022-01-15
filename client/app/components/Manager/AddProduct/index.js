@@ -14,7 +14,7 @@ import Button from '../../Common/Button';
 import SelectOption from '../../Common/SelectOption';
 
 const taxableSelect = [
-  { value: 1, label: 'Yes' },
+  { value: 1, label: 'Si' },
   { value: 0, label: 'No' }
 ];
 
