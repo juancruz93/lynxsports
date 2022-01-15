@@ -1,12 +1,12 @@
 {
   "ROLE_ADMIN": [
-    { "to": "", "name": "Account Details" },
-    { "to": "/security", "name": "Account Security" },
-    { "to": "/address", "name": "Address" },
-    { "to": "/product", "name": "Products" },
-    { "to": "/category", "name": "Categories" },
-    { "to": "/brand", "name": "Brands" },
-    { "to": "/users", "name": "Users" },
+    { "to": "", "name": "Detalles De La Cuenta" },
+    { "to": "/security", "name": "Seguridad de la cuenta" },
+    { "to": "/address", "name": "Dirección" },
+    { "to": "/product", "name": "Productos" },
+    { "to": "/category", "name": "Categorías" },
+    { "to": "/brand", "name": "Marcas" },
+    { "to": "/users", "name": "Usuarios" },
     { "to": "/merchants", "name": "Merchants" },
     { "to": "/orders", "name": "Orders" },
     { "to": "/review", "name": "Reviews" },
@@ -14,20 +14,20 @@
     { "to": "/support", "name": "Support" }
   ],
   "ROLE_MERCHANT": [
-    { "to": "", "name": "Account Details" },
-    { "to": "/security", "name": "Account Security" },
-    { "to": "/address", "name": "Address" },
-    { "to": "/brand", "name": "Brand" },
-    { "to": "/product", "name": "Products" },
+    { "to": "", "name": "Detalles De La Cuenta" },
+    { "to": "/security", "name": "Seguridad de la cuenta" },
+    { "to": "/address", "name": "Dirección" },
+    { "to": "/brand", "name": "Marcas" },
+    { "to": "/product", "name": "Productos" },
     { "to": "/orders", "name": "Orders" },
     { "to": "/wishlist", "name": "WishList" },
     { "to": "/support", "name": "Support" }
   ],
   "ROLE_MEMBER": [
-    { "to": "", "name": "Account Details" },
-    { "to": "/security", "name": "Account Security" },
-    { "to": "/address", "name": "Address" },
-    { "to": "/orders", "name": "Orders" },
+    { "to": "", "name": "Detalles De La Cuenta" },
+    { "to": "/security", "name": "Seguridad de la cuenta" },
+    { "to": "/address", "name": "Productos" },
+    { "to": "/orders", "name": "Pedidos" },
     { "to": "/wishlist", "name": "WishList" },
     { "to": "/support", "name": "Support" }
   ]

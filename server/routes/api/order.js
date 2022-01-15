@@ -127,22 +127,40 @@ router.get('/search', auth, async (req, res) => {
 // fetch orders api
 router.get('/', auth, async (req, res) => {
   try {
+
+  
     const user = req.user._id;
-
-    let ordersDoc = await Order.find({ user }).populate({
-      path: 'cart',
-      populate: {
-        path: 'products.product',
+    let orderDoc = null;
+    if (req.user.role === role.ROLES.Admin) {     
+      ordersDoc = await Order.find({}).populate({
+        path: 'cart',
         populate: {
-          path: 'brand'
+          path: 'products.product',
+          populate: {
+            path: 'brand'
+          }
         }
-      }
-    });
+      });
+    } else {
+      ordersDoc = await Order.find({ user }).populate({
+        path: 'cart',
+        populate: {
+          path: 'products.product',
+          populate: {
+            path: 'brand'
+          }
+        }
+      });
+    }
 
-    ordersDoc = ordersDoc.filter(order => order.cart);
+    //console.log(ordersDoc);
 
+   // ordersDoc = ordersDoc.filter(order => order.cart);
+
+    
     if (ordersDoc.length > 0) {
-      const newOrders = ordersDoc.map(o => {
+      
+      const orders = ordersDoc.map(o => {
         return {
           _id: o._id,
           total: parseFloat(Number(o.total.toFixed(2))),
@@ -151,8 +169,10 @@ router.get('/', auth, async (req, res) => {
         };
       });
 
-      let orders = newOrders.map(o => store.caculateTaxAmount(o));
-      orders.sort((a, b) => b.created - a.created);
+      //let orders = newOrders.map(o => store.caculateTaxAmount(o));
+     // orders.sort((a, b) => b.created - a.created);
+
+     //console.log(newOrders);
       res.status(200).json({
         orders
       });
