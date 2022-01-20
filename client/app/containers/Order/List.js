@@ -69,7 +69,7 @@ class List extends React.PureComponent {
           ) : orders.length > 0 ? (
             <OrderList orders={filteredOrders} />
           ) : (
-            <NotFound message='you have no orders yet!' />
+            <NotFound message='¡Aún no tienes pedidos!' />
           )}
         </SubPage>
       </div>

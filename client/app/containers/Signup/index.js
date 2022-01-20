@@ -42,7 +42,7 @@ class Signup extends React.PureComponent {
     return (
       <div className='signup-form'>
         {isLoading && <LoadingIndicator />}
-        <h2>Sign Up</h2>
+        <h2>Inscribirse</h2>
         <hr />
         <form onSubmit={handleSubmit} noValidate>
           <Row>
@@ -55,9 +55,9 @@ class Signup extends React.PureComponent {
                 <Input
                   type={'text'}
                   error={formErrors['email']}
-                  label={'Email Address'}
+                  label={'Correo Electrónico'}
                   name={'email'}
-                  placeholder={'Please Enter Your Email'}
+                  placeholder={'Por Favor, Ingreser Su Correo Electrónico'}
                   value={signupFormData.email}
                   onInputChange={(name, value) => {
                     signupChange(name, value);
@@ -68,9 +68,9 @@ class Signup extends React.PureComponent {
                 <Input
                   type={'text'}
                   error={formErrors['firstName']}
-                  label={'First Name'}
+                  label={'Nombre'}
                   name={'firstName'}
-                  placeholder={'Please Enter Your First Name'}
+                  placeholder={'Por Favor, Ingrese Su Nombre'}
                   value={signupFormData.firstName}
                   onInputChange={(name, value) => {
                     signupChange(name, value);
@@ -81,9 +81,9 @@ class Signup extends React.PureComponent {
                 <Input
                   type={'text'}
                   error={formErrors['lastName']}
-                  label={'Last Name'}
+                  label={'Apellido'}
                   name={'lastName'}
-                  placeholder={'Please Enter Your Last Name'}
+                  placeholder={'Por Favor, Ingrese su Apellido'}
                   value={signupFormData.lastName}
                   onInputChange={(name, value) => {
                     signupChange(name, value);
@@ -93,10 +93,10 @@ class Signup extends React.PureComponent {
               <Col xs='12' md='12'>
                 <Input
                   type={'password'}
-                  label={'Password'}
+                  label={'Contraseña'}
                   error={formErrors['password']}
                   name={'password'}
-                  placeholder={'Please Enter Your Password'}
+                  placeholder={'Por Favor, Ingrese Su Contraseña'}
                   value={signupFormData.password}
                   onInputChange={(name, value) => {
                     signupChange(name, value);
@@ -113,9 +113,9 @@ class Signup extends React.PureComponent {
             </Col>
           </Row>
           <hr />
-          <Checkbox
+         <Checkbox
             id={'subscribe'}
-            label={'Subscribe to newsletter'}
+            label={'Suscríbete al boletín'}
             checked={isSubscribed}
             toggleCheckboxChange={subscribeChange}
           />
@@ -123,11 +123,11 @@ class Signup extends React.PureComponent {
             <Button
               type='submit'
               variant='primary'
-              text='Sign Up'
+              text='Registrarse'
               disabled={isSubmitting}
             />
             <Link className='mt-3 mt-md-0 redirect-link' to={'/login'}>
-              Back to login
+              Volver a Iniciar Sesión
             </Link>
           </div>
         </form>

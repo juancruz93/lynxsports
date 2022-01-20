@@ -265,7 +265,7 @@ router.post('/reset', auth, async (req, res) => {
     if (!isMatch) {
       return res
         .status(400)
-        .json({ error: 'Please enter your correct old password.' });
+        .json({ error: 'Por Favor Ingrese Su Antigua Contraseña' });
     }
 
     const salt = await bcrypt.genSalt(10);

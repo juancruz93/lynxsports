@@ -44,7 +44,7 @@ class Homepage extends React.PureComponent {
           <Col xs='12' lg='3' className='order-lg-3 mb-3 px-3 px-md-2'>
             <div className='d-flex flex-column h-100 justify-content-between'>
               <img src='/images/banners/bannera.png' className='mb-3' />
-              <img src='/images/banners/orbe2.jpg' />
+              <img src='/images/banners/orbe2.jpg'  />
             </div>
           </Col>
         </Row>

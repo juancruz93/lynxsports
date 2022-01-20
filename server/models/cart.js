@@ -26,8 +26,8 @@ const CartItemSchema = new Schema({
   },
   status: {
     type: String,
-    default: 'Not processed',
-    enum: ['Not processed', 'Processing', 'Shipped', 'Delivered', 'Cancelled']
+    default: 'No Procesado',
+    enum: ['No Procesado', 'Procesado', 'Enviado', 'Entregado', 'Cancelado']
   }
 });
 

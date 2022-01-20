@@ -261,6 +261,8 @@ export const addProduct = () => {
             : brands[1].value
       };
 
+      //console.log(newProduct)
+
       const { isValid, errors } = allFieldsValidation(newProduct, rules, {
         'required.sku': 'Sku is required.',
         'required.name': 'Name is required.',

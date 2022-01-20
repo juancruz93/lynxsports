@@ -45,7 +45,7 @@ const AddProduct = props => {
               error={formErrors['sku']}
               label={'Sku'}
               name={'sku'}
-              placeholder={'Product Sku'}
+              placeholder={'Producto Sku'}
               value={productFormData.sku}
               onInputChange={(name, value) => {
                 productChange(name, value);
@@ -56,9 +56,9 @@ const AddProduct = props => {
             <Input
               type={'text'}
               error={formErrors['name']}
-              label={'Name'}
+              label={'Nombre Producto'}
               name={'name'}
-              placeholder={'Product Name'}
+              placeholder={'Nombre Producto'}
               value={productFormData.name}
               onInputChange={(name, value) => {
                 productChange(name, value);
@@ -69,9 +69,9 @@ const AddProduct = props => {
             <Input
               type={'textarea'}
               error={formErrors['description']}
-              label={'Description'}
+              label={'Descripción'}
               name={'description'}
-              placeholder={'Product Description'}
+              placeholder={'Descripción Producto'}
               value={productFormData.description}
               onInputChange={(name, value) => {
                 productChange(name, value);
@@ -82,10 +82,10 @@ const AddProduct = props => {
             <Input
               type={'number'}
               error={formErrors['quantity']}
-              label={'Quantity'}
+              label={'Cantidad'}
               name={'quantity'}
               decimals={false}
-              placeholder={'Product Quantity'}
+              placeholder={'Cantidad Producto'}
               value={productFormData.quantity}
               onInputChange={(name, value) => {
                 productChange(name, value);
@@ -96,10 +96,10 @@ const AddProduct = props => {
             <Input
               type={'number'}
               error={formErrors['price']}
-              label={'Price'}
+              label={'Precio'}
               name={'price'}
               min={1}
-              placeholder={'Product Price'}
+              placeholder={'Precio Producto'}
               value={productFormData.price}
               onInputChange={(name, value) => {
                 productChange(name, value);
@@ -123,7 +123,7 @@ const AddProduct = props => {
               disabled={user.role === 'ROLE_MERCHANT'}
               error={formErrors['brand']}
               name={'brand'}
-              label={'Select Brand'}
+              label={'Seleccionar marca'}
               value={
                 user.role === 'ROLE_MERCHANT'
                   ? brands[1]
@@ -137,11 +137,11 @@ const AddProduct = props => {
           </Col>
           <Col xs='12' md='12'>
             <Input
-              type={'file'}
+              type={'text'}
               error={formErrors['file']}
               name={'image'}
-              label={'file'}
-              placeholder={'Please Upload Image'}
+              label={'Link Producto Imagen'}
+              placeholder={'Por Favor Cargue Imagen'}
               value={image}
               onInputChange={(name, value) => {
                 productChange(name, value);
@@ -160,7 +160,7 @@ const AddProduct = props => {
         </Row>
         <hr />
         <div className='add-product-actions'>
-          <Button type='submit' text='Add Product' />
+          <Button type='submit' text='Añadir Producto' />
         </div>
       </form>
     </div>

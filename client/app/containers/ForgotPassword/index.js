@@ -44,7 +44,7 @@ class ForgotPassword extends React.PureComponent {
                 error={formErrors['email']}
                 label={'Email Address'}
                 name={'email'}
-                placeholder={'Please Enter Your Email'}
+                placeholder={'Por Favor Ingrese Su Correo Electrónico'}
                 value={forgotFormData.email}
                 onInputChange={(name, value) => {
                   forgotPasswordChange(name, value);

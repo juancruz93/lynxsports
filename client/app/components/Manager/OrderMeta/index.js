@@ -20,19 +20,19 @@ const OrderMeta = props => {
       order.products.filter(i => i.status === 'Delivered').length < 1;
 
     if (isNotDelivered) {
-      return <Button size='sm' text='Cancel Order' onClick={cancelOrder} />;
+      return <Button size='sm' text='Cancelar Pedido' onClick={cancelOrder} />;
     }
   };
 
   return (
     <div className='order-meta'>
       <div className='d-flex align-items-center justify-content-between mb-3 title'>
-        <h2 className='mb-0'>Order Details</h2>
+        <h2 className='mb-0'>Pedido Detalles</h2>
         <Button
           variant='link'
           icon={<ArrowBackIcon />}
           size='sm'
-          text='Back to orders'
+          text='Volver A Los Pedidos'
           onClick={onBack}
         ></Button>
       </div>

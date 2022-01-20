@@ -40,7 +40,7 @@ class MerchantSignup extends React.PureComponent {
           <Row>
             <Col xs={{ size: 12 }} md={{ size: 6, offset: 3 }} className='p-0'>
               <Col xs='12' md='12'>
-                <h2 className='text-center'>Complete Sign Up</h2>
+                <h2 className='text-center'>Registro completo</h2>
                 <hr />
               </Col>
 
@@ -48,9 +48,9 @@ class MerchantSignup extends React.PureComponent {
                 <Input
                   type={'text'}
                   error={formErrors['email']}
-                  label={'Email Address'}
+                  label={'Correo Electrónico'}
                   name={'email'}
-                  placeholder={'Please Enter Your Email'}
+                  placeholder={'Por Favor Ingrese Su Correo Electrónico'}
                   value={signupFormData.email}
                   onInputChange={(name, value) => {
                     merchantSignupChange(name, value);
@@ -61,9 +61,9 @@ class MerchantSignup extends React.PureComponent {
                 <Input
                   type={'text'}
                   error={formErrors['firstName']}
-                  label={'First Name'}
+                  label={'Nombre'}
                   name={'firstName'}
-                  placeholder={'Please Enter Your First Name'}
+                  placeholder={'Por Favor, Ingrese Su Nombre'}
                   value={signupFormData.firstName}
                   onInputChange={(name, value) => {
                     merchantSignupChange(name, value);
@@ -74,9 +74,9 @@ class MerchantSignup extends React.PureComponent {
                 <Input
                   type={'text'}
                   error={formErrors['lastName']}
-                  label={'Last Name'}
+                  label={'Apellido'}
                   name={'lastName'}
-                  placeholder={'Please Enter Your Last Name'}
+                  placeholder={'Por Favor, Ingrese Su Apellido'}
                   value={signupFormData.lastName}
                   onInputChange={(name, value) => {
                     merchantSignupChange(name, value);
@@ -86,10 +86,10 @@ class MerchantSignup extends React.PureComponent {
               <Col xs='12' md='12'>
                 <Input
                   type={'password'}
-                  label={'Password'}
+                  label={'Contraseña'}
                   error={formErrors['password']}
                   name={'password'}
-                  placeholder={'Please Enter Your Password'}
+                  placeholder={'Por Favor, Ingrese La Contraseña'}
                   value={signupFormData.password}
                   onInputChange={(name, value) => {
                     merchantSignupChange(name, value);

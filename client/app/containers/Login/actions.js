@@ -87,7 +87,7 @@ export const login = () => {
 export const signOut = () => {
   return (dispatch, getState) => {
     const successfulOptions = {
-      title: `You have signed out!`,
+      title: `¡Has cerrado sesión!`,
       position: 'tr',
       autoDismiss: 1
     };

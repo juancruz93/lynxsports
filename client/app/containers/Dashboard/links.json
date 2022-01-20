@@ -26,7 +26,7 @@
   "ROLE_MEMBER": [
     { "to": "", "name": "Detalles De La Cuenta" },
     { "to": "/security", "name": "Seguridad de la cuenta" },
-    { "to": "/address", "name": "Productos" },
+    { "to": "/address", "name": "Dirección" },
     { "to": "/orders", "name": "Pedidos" },
     { "to": "/wishlist", "name": "lista de deseos" },
     { "to": "/support", "name": "Soporte" }

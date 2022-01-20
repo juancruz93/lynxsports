@@ -385,7 +385,9 @@ router.post(
       const taxable = req.body.taxable;
       const isActive = req.body.isActive;
       const brand = req.body.brand;
-      const image = req.file;
+      const image = req.body.image;
+
+     // console.log(req.body)
 
       if (!sku) {
         return res.status(400).json({ error: 'Debe ingresar el sku.' });
@@ -411,10 +413,10 @@ router.post(
         return res.status(400).json({ error: 'Este sku ya está en uso.' });
       }
 
-      let imageUrl = '';
+      let imageUrl = image;
       let imageKey = '';
 
-      if (image) {
+    /*  if (image) {
         const s3bucket = new AWS.S3({
           accessKeyId: process.env.AWS_ACCESS_KEY_ID,
           secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
@@ -434,7 +436,7 @@ router.post(
         imageUrl = s3Upload.Location;
         imageKey = s3Upload.key;
       }
-
+*/
       const product = new Product({
         sku,
         name,

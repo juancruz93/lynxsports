@@ -20,7 +20,7 @@ router.post('/add', auth, (req, res) => {
 
     res.status(200).json({
       success: true,
-      message: `Your review has been added successfully and will appear when approved!`,
+      message: `¡Tu reseña se ha agregado con éxito y aparecerá cuando se apruebe!`,
       review: data
     });
   });

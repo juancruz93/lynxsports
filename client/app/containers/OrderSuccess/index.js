@@ -18,6 +18,7 @@ class OrderSuccess extends React.PureComponent {
   componentDidMount() {
     const id = this.props.match.params.id;
     this.props.fetchOrder(id);
+    window.open('https://api.whatsapp.com/send?phone=+573186284444&text=Hola,%20Quiero%20realizar%20una%20compra%20con%20un%20ID%20de%20pedido:%20' + id, '_blank');
   }
 
   componentDidUpdate(prevProps) {

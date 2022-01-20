@@ -96,7 +96,7 @@ const ReviewList = props => {
               <div className='d-flex flex-column flex-lg-row justify-content-between align-items-lg-center mx-0'>
                 <div className='d-flex flex-row mx-0'>
                   <CheckIcon className='text-green' />
-                  <p className='ml-2 mb-0'>Approved</p>
+                  <p className='ml-2 mb-0'>Aprobado</p>
                 </div>
                 <Button
                   className='mt-3 mt-lg-0'
@@ -109,7 +109,7 @@ const ReviewList = props => {
               <>
                 <div className='d-flex align-items-center mb-3'>
                   <RefreshIcon className='text-primary' />
-                  <p className='fw-2 ml-3 mb-0'>Re Approve Review</p>
+                  <p className='fw-2 ml-3 mb-0'>Reaprobar revisión</p>
                 </div>
                 <div className='d-flex flex-column flex-lg-row justify-content-between align-items-lg-center mx-0'>
                   <Button

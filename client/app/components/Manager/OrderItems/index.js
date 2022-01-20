@@ -17,11 +17,11 @@ const OrderItems = props => {
 
   const renderPopoverContent = item => {
     const statuses = [
-      'Not processed',
-      'Processing',
-      'Shipped',
-      'Delivered',
-      'Cancelled'
+      'No Procesado',
+      'Procesado',
+      'Enviado',
+      'Entregado',
+      'Cancelado'
     ];
 
     return (
@@ -85,7 +85,7 @@ const OrderItems = props => {
 
   return (
     <div className='order-items pt-3'>
-      <h2>Order Items</h2>
+      <h2>Pedido Items</h2>
       <Row>
         {order.products.map((item, index) => (
           <Col xs='12' key={index} className='item'>

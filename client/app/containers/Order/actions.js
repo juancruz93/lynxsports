@@ -181,14 +181,19 @@ export const placeOrder = () => {
     const token = localStorage.getItem('token');
 
     const cartItems = getState().cart.cartItems;
+    
 
     if (token && cartItems.length > 0) {
+     
       Promise.all([dispatch(getCartId())]).then(() => {
         dispatch(addOrder());
       });
     }
 
     dispatch(toggleCart());
+   
+   // window.location.href = ' ; 
+
   };
 };
 
